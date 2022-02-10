@@ -1,0 +1,20 @@
+[
+  {
+    "ID": 1,
+    "Note": "An example of a canned note / pre-defined specification.\n\nDouble-click me to include me. Right click me to see a context menu. There you can edit me, copy me, or delete me.\n\n This document can then be exported to a word document for distribution.",
+    "Category": "Category 1",
+    "Product": "All"
+  },
+  {
+    "ID": 2,
+    "Note": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque in nulla eu est feugiat condimentum eu non massa. Pellentesque fermentum consectetur aliquet. Nullam eget nulla vestibulum, ullamcorper sem ac, mattis ex. In vel velit dolor. Integer facilisis elit eu pulvinar finibus. Nunc mattis velit in sapien vulputate, vel sagittis mauris tempor. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Ut sit amet metus non tellus viverra vulputate vel id magna. Etiam sed dui ac arcu pulvinar consequat.",
+    "Category": "Category 1",
+    "Product": "All"
+  },
+  {
+    "ID": 3,
+    "Note": "Maecenas luctus scelerisque nisl, molestie lacinia ipsum dapibus ac. Praesent vel massa vitae arcu cursus consectetur quis nec odio. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nam sollicitudin non mauris aliquam elementum. Nulla vel feugiat dui. Curabitur dolor sapien, euismod a velit sed, ultrices volutpat lectus. Pellentesque vel semper arcu, a faucibus urna.",
+    "Category": "Category 2",
+    "Product": "All"
+  }
+]

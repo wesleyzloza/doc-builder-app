@@ -1,0 +1,254 @@
+:root {
+  /* Element Plus UI */
+  --el-color-primary: #1a7ccc !important;
+
+  /* background */
+  --doc-color-bg-white: #ffffff;
+  --doc-color-bg-lighter: #f0f0f0;
+  --doc-color-bg-light: #efefef;
+  --doc-color-bg-accent: #ebf7fb;
+  --doc-color-bg-accent-light: #ffffff98;
+
+  /* text */
+  --doc-color-text-light: #949494;
+  --doc-color-text-default: #4d4d4f;
+  --doc-color-text-dark: #333333;
+  --doc-color-text-darker: #212529;
+  --doc-color-text-black: #000000;
+
+  /* colors */
+  --doc-color-primary-01: #4ec1e0;
+  --doc-color-primary-02: #98d4e8;
+  --doc-color-primary-03: #003e51;
+  --doc-color-primary-04: #46a8c6;
+  --doc-color-hover: #ddf7ff;
+  --doc-color-dark: #5590af;
+
+  --doc-color-red: #f26652;
+  --doc-color-orange: #f8992f;
+  --doc-color-yellow: #ffd040;
+  --doc-color-green: #56a67b;
+  --doc-color-blue: #4ec1e0;
+  --doc-color-purple: #d084f3;
+  --doc-color-sea: #003e51;
+
+  /* borders */
+  --doc-border-color: #ccc;
+
+  /* elevation */
+  --doc-depth-4: 0 1.6px 3.6px 0 rgba(0, 0, 0, 0.132), 0 0.3px 0.9px 0 rgba(0, 0, 0, 0.108);
+  --doc-depth-8: 0 3.2px 7.2px 0 rgba(0, 0, 0, 0.132), 0 0.6px 1.8px 0 rgba(0, 0, 0, 0.108);
+  --doc-depth-16: 0 6.4px 14.4px 0 rgba(0, 0, 0, 0.132), 0 1.2px 3.6px 0 rgba(0, 0, 0, 0.108);
+  --doc-depth-64: 0 25.6px 57.6px 0 rgba(0, 0, 0, 0.22), 0 4.8px 14.4px 0 rgba(0, 0, 0, 0.18);
+
+  --doc-hard-shadow: 0 1.6px 3.6px 0 rgba(0, 0, 0, 0.132), 0 0.3px 0.9px 0 rgba(0, 0, 0, 0.108);
+  --doc-menu-shadow: 0 25.6px 57.6px 0 rgba(0, 0, 0, 0.22), 0 4.8px 14.4px 0 rgba(0, 0, 0, 0.18);
+  --doc-soft-shadow: 0 1px 2px rgba(53, 37, 37, 0.05), 0 2px 4px rgba(0, 0, 0, 0.05), 0 4px 8px rgba(0, 0, 0, 0.07),
+    0 8px 16px rgba(0, 0, 0, 0.01), 0 16px 32px rgba(0, 0, 0, 0.005), 0 32px 64px rgba(0, 0, 0, 0.001);
+}
+
+.depth-4 {
+  position: relative;
+  z-index: 4;
+  box-shadow: var(--doc-depth-4);
+}
+
+.depth-8 {
+  position: relative;
+  z-index: 8;
+  box-shadow: var(--doc-depth-8);
+}
+
+.depth-16 {
+  position: relative;
+  z-index: 16;
+  box-shadow: var(--doc-depth-16);
+}
+
+.depth-64 {
+  position: relative;
+  z-index: 64;
+  box-shadow: var(--doc-depth-64);
+}
+
+/* Text */
+* {
+  font-family: Arial, Helvetica, sans-serif;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-size: 80%;
+  background: rgb(228, 241, 255);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+h1 {
+  font-family: 'Arial';
+  font-size: 16pt;
+  color: var(--doc-color-sea);
+}
+
+h2 {
+  font-family: 'Arial';
+  font-size: 10pt;
+  text-transform: uppercase;
+  color: var(--doc-color-blue);
+  margin: 0.5em 0;
+}
+
+h3 {
+  font-family: 'Arial';
+  font-size: 9pt;
+  color: var(--doc-color-text-default);
+  margin: 0.25rem 0;
+}
+
+p {
+  font-size: 10pt;
+  color: var(--doc-color-text-default);
+}
+
+/* Card */
+.evo-card {
+  padding: 1em;
+  border-radius: 2px;
+}
+
+.evo-card-img {
+  margin: -1em -1em 1em -1em;
+  width: calc(100% + 2em);
+}
+
+/* Tables */
+.evo-table {
+  margin: 1em 0em;
+  width: 100%;
+  text-align: left;
+  border-collapse: collapse;
+}
+
+.evo-table thead th,
+.evo-table tfoot td {
+  border-top: 1px solid var(--doc-border-color);
+  border-bottom: 1px solid var(--doc-border-color);
+  padding: 0.5em;
+}
+
+.evo-table tbody td {
+  padding: 0.5em;
+}
+
+.evo-table input {
+  margin: -0.5em;
+  padding: 0.5em;
+  width: calc(100% + 1em);
+  border: none;
+  background: rgba(0, 0, 0, 0.05);
+  outline-color: var(--doc-color-yellow);
+}
+
+.evo-table-striped tbody tr:nth-child(odd) {
+  background-color: #fff;
+}
+
+.evo-table-striped tbody tr:nth-child(even) {
+  background-color: var(--doc-color-bg-accent);
+}
+
+/* Scrollbar */
+body::-webkit-scrollbar-thumb {
+  visibility: visible;
+}
+
+div:hover::-webkit-scrollbar-thumb {
+  visibility: visible;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--doc-color-bg-light);
+}
+
+::-webkit-scrollbar-track:hover ::-webkit-scrollbar-thumb {
+  background: #555;
+}
+
+::-webkit-scrollbar {
+  width: 12px;
+  height: 12px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #ccc;
+  border-radius: 12px;
+  border: 4px solid var(--doc-color-bg-light);
+  visibility: hidden;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #aaa;
+}
+
+/* Vue 3 Transitions */
+.fade-enter-active {
+  transition: opacity 0.2s ease;
+}
+
+.fade-leave-active {
+  display: none;
+}
+
+.fade-enter-from,
+.fade-leave-to {
+  opacity: 0;
+}
+
+/* Element UI Override */
+.el-card {
+  border-radius: 2px !important;
+  border-color: transparent !important;
+  box-shadow: var(--doc-depth-16) !important;
+}
+
+.el-tabs__item + .is-active {
+  color: black !important;
+}
+
+/* Element UI Overrides **/
+.el-main {
+  margin: 0 auto;
+  max-width: 1240px;
+}
+
+.el-form-item {
+  margin-bottom: 12px !important;
+}
+
+.el-form-item__label {
+  padding-bottom: 0 !important;
+}
+
+.el-popconfirm__main {
+  margin-top: 0.5em;
+}
+
+.el-message-dark {
+  border: none !important;
+  border-radius: 4px !important;
+  background: #333 !important;
+  box-shadow: 0 3.2px 7.2px 0 rgba(0,0,0,.132), 0 .6px 1.8px 0 rgba(0,0,0,.108) !important;
+}
+
+.el-message-dark * {
+  color: white !important;
+}

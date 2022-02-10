@@ -1,0 +1,11 @@
+# Ignore the following directories:
+build
+dist
+node_modules
+package
+
+# Ignore specific files.
+package-lock.json
+
+# Ignore all HTML files:
+*.html
